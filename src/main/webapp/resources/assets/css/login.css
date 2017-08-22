@@ -1,0 +1,39 @@
+body{
+  background-image:url(../../assets/img/22.jpg);
+}
+
+input.form-control.input-lg{
+  font-weight:600;
+}
+
+div.row{
+  padding:10px;
+}
+
+div.well{
+  width:70%;
+  margin:0 auto;
+}
+
+i.glyphicon.glyphicon-lock{
+  font-size:150%;
+  color:#ffffff;
+  background-color:#002649;
+  padding:5px;
+}
+
+h1.text-center{
+  color:#ffffff;
+}
+
+div.col-md-6{
+  padding:10px;
+}
+
+i.glyphicon.glyphicon-user{
+  font-size:150%;
+  color:#ffffff;
+  padding:5px;
+  background-color:#002649;
+}
+

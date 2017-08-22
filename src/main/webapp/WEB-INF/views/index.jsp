@@ -78,7 +78,7 @@
             <div class="row">
                 <div class="col-sm-4 col-xs-6">
                     <h1>About Us</h1>
-                    <p>Launched in Augestt 2017.Moblies Store is India's leading e-commerce marketplace with over mutlti-products.</p>
+                    <p>Launched in Augest 2017.Moblies Store is India's leading e-commerce marketplace with over mutlti-products.</p>
                 </div>
                 <div class="col-sm-4 col-xs-6">
                     <h1>Connect With Us</h1><i class="fa fa-facebook-square icon"></i><i class="fa fa-instagram icon"></i><i class="fa fa-pinterest-p icon"></i></div>

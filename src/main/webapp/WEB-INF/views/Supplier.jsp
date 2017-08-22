@@ -28,9 +28,9 @@
             </div>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav">
-                    <li role="presentation"><a href="Category">Category </a></li>
-                    <li role="presentation"><a href="Supplier">Supplier </a></li>
-                    <li role="presentation"><a href="Product">Product </a></li>
+                    <li role="presentation"><a href="category">Category </a></li>
+                    <li role="presentation"><a href="supplier">Supplier </a></li>
+                    <li role="presentation"><a href="product">Product </a></li>
                 </ul>
             </div>
         </div>
@@ -40,7 +40,7 @@
         <div class="well"><span> </span>
             <div class="row">
                 <div class="col-md-4">
-                    <form:label path="supplierid">Supplier id</form:label>
+                    <form:label path="supplierid">supplier id</form:label>
                 </div>
                 <div class="col-md-6">
                     <form:input path="supplierid" type="text"/>
@@ -48,7 +48,7 @@
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <form:label path="supplierName">Supplier Name</form:label>
+                    <form:label path="supplierName">supplier Name</form:label>
                 </div>
                 <div class="col-md-6">
                     <form:input path="supplierName" type="text"/>

@@ -27,9 +27,9 @@
             </div>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav">
-                    <li role="presentation"><a href="#">Category </a></li>
-                    <li role="presentation"><a href="#">Supplier </a></li>
-                    <li role="presentation"><a href="#">Product </a></li>
+                    <li role="presentation"><a href="category">Category </a></li>
+                    <li role="presentation"><a href="supplier">Supplier </a></li>
+                    <li role="presentation"><a href="product">Product </a></li>
                 </ul>
             </div>
         </div>
@@ -38,7 +38,7 @@
     <div class="well">
         <div class="row">
             <div class="col-md-4">
-                <form:label path="CategoryId">Category Id</form:label>
+                <form:label path="categoryId">category Id</form:label>
             </div>
             <div class="col-md-6 col-sm-8">
                 <form:input path="categoryId" type="text"/>
@@ -46,15 +46,15 @@
         </div>
         <div class="row">
             <div class="col-md-4">
-                <form:label path="CategoryName">Category Name</form:label>
+                <form:label path="categoryName">category Name</form:label>
             </div>
             <div class="col-md-6 col-sm-8">
-                <form:input path="CategoryName" type="text"/>
+                <form:input path="categoryName" type="text"/>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4">
-                <form:label path="Categorydescription">Category Description</form:label>
+                <form:label path="categorydescription">category Description</form:label>
             </div>
             <div class="col-md-6 col-sm-8">
                 <form:input path="categorydescription" type="text"/>
@@ -79,6 +79,7 @@
 	<th>ID</th>
 	<th>Category name</th>
 	<th>Category description</th>
+	
 	</tr>
 	</thead>
 	<tbody>
@@ -97,6 +98,7 @@
      
     <script src="<c:url value="/resources/assets/js/jquery.min.js"/>"></script>
     <script src="<c:url value="/resources/assets/bootstrap/js/bootstrap.min.js"/>"></script>
+    
 </body>
 
 </html>

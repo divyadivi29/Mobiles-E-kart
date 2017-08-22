@@ -27,9 +27,9 @@
             </div>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav">
-                    <li role="presentation"><a href="Category">Category </a></li>
-                    <li role="presentation"><a href="Supplier">Supplier </a></li>
-                    <li role="presentation"><a href="Product">Product </a></li>
+                    <li role="presentation"><a href="category">Category </a></li>
+                    <li role="presentation"><a href="supplier">Supplier </a></li>
+                    <li role="presentation"><a href="product">Product </a></li>
                 </ul>
             </div>
         </div>
@@ -39,7 +39,7 @@
         <div class="well"><span> </span>
             <div class="row">
                 <div class="col-lg-4 col-md-4">
-                    <form:label path="productid">Product id</form:label>
+                    <form:label path="productid">product id</form:label>
                 </div>
                 <div class="col-md-6">
                     <form:input path="productid" type="text"/>
@@ -47,7 +47,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-4">
-                    <form:label path="productName">Product Name </form:label>
+                    <form:label path="productName">product Name </form:label>
                 </div>
                 <div class="col-md-6">
                     <form:input path="productName" type="text"/>
@@ -55,7 +55,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-4">
-                    <form:label path="productDescription">Product Description</form:label>
+                    <form:label path="productDescription">product Description</form:label>
                 </div>
                 <div class="col-md-6">
                     <form:input path="productDescription" type="text"/>
@@ -63,7 +63,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-4">
-                    <form:label path="price">Price </form:label>
+                    <form:label path="price">price </form:label>
                 </div>
                 <div class="col-md-6">
                     <form:input path="price" type="text"/>
@@ -71,7 +71,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-4">
-                    <form:label path="stock">Stock </form:label>
+                    <form:label path="stock">stock </form:label>
                 </div>
                 <div class="col-md-6">
                     <form:input path="stock" type="text"/>
@@ -79,7 +79,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-4">
-                    <form:label path="image">Image </form:label>
+                    <form:label path="image">image </form:label>
                 </div>
                 <div class="col-md-6">
                     <form:input path="image" type="file"/>
@@ -87,7 +87,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-4">
-                    <form:label path="Catid">Category </form:label>
+                    <form:label path="Catid">category </form:label>
                 </div>
                 <div class="col-md-6">
                     <form:select path="Catid" class="form-control">
@@ -103,7 +103,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-4">
-                    <form:label path="Supid">Supplier </form:label>
+                    <form:label path="Supid">supplier </form:label>
                 </div>
                 <div class="col-md-6">
                     <form:select path="Supid">
