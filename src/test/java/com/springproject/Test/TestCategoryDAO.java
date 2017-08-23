@@ -1,4 +1,4 @@
-/*package com.spring.test;
+/*package com.springproject.test;
 import static org.junit.Assert.assertEquals;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -7,7 +7,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.annotation.ComponentScan;
 import com.spring.dao.CategoryDAO;
 import com.spring.model.Category;
-@ComponentScan("com.spring")
+@ComponentScan("com.springproject")
 public class TestCategoryDAO {
 	@Autowired
 	private static Category category;
@@ -19,7 +19,7 @@ public class TestCategoryDAO {
 public static void initialize()
 {
 	AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
-	context.scan("com.spring.*");
+	context.scan("com.springproject.*");
 	context.refresh();
 	
 	category = (Category) context.getBean("category");

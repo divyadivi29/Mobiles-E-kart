@@ -18,6 +18,7 @@ import org.springframework.stereotype.Component;
 
 
 @SuppressWarnings("unused")
+
 @Entity
 @Component
 @Table(name="Category")

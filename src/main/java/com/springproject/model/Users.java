@@ -1,6 +1,9 @@
 package com.springproject.model;
 import javax.persistence.*;
+
+import org.springframework.stereotype.Component;
 @Entity
+@Component
 @Table(name="User_Details")
 public class Users{
 

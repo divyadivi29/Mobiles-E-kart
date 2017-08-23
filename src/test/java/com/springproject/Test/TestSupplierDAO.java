@@ -1,4 +1,4 @@
-/*package com.spring.test;
+/*package com.springproject.test;
 import static org.junit.Assert.assertEquals;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 import com.spring.dao.SupplierDAO;
 import com.spring.model.Supplier;
 import com.spring.service.SupplierService;
-@ComponentScan("com.spring")
+@ComponentScan("com.springproject")
 public class TestSupplierDAO {
 	@Autowired
 	private static Supplier supplier;
@@ -21,7 +21,7 @@ public class TestSupplierDAO {
 	{
 		@SuppressWarnings("resource")
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
-		context.scan("com.spring.*");
+		context.scan("com.springproject.*");
 		context.refresh();
 		
 			supplier = (Supplier) context.getBean("supplier");

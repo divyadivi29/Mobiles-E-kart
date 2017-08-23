@@ -18,6 +18,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import com.springproject.dao.CategoryDAO;
 import com.springproject.dao.CategoryDAOImpl;
+import com.springproject.dao.SupplierDAO;
+import com.springproject.dao.SupplierDAOImpl;
 import com.springproject.dao.UserDAO;
 import com.springproject.dao.UserDAOImpl;
 import com.springproject.model.Cart;
@@ -79,7 +81,7 @@ public class HbConfig {
 		return transactionManager;
 	}
 
-/*	@Autowired
+	@Autowired
 	@Bean(name = "userDAO")
 	public UserDAO getUserDetailsDAO(SessionFactory sessionFactory) {
 			return new UserDAOImpl(sessionFactory);
@@ -92,8 +94,13 @@ public class HbConfig {
 	public CategoryDAO getcategoryDetailsDAO(SessionFactory sessionFactory) {
 			return new CategoryDAOImpl(sessionFactory);
 	}
+	@Autowired
+	@Bean(name = "supplierDAO")
+	public SupplierDAO getsupplierDetailsDAO(SessionFactory sessionFactory) {
+			return new SupplierDAOImpl(sessionFactory);
+	}
 	
 	
-	*/
+	
 	
 }
