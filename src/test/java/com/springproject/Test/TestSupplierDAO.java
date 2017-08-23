@@ -1,13 +1,13 @@
-/*package com.springproject.test;
+package com.springproject.Test;
 import static org.junit.Assert.assertEquals;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
-import com.spring.dao.SupplierDAO;
-import com.spring.model.Supplier;
-import com.spring.service.SupplierService;
+import com.springproject.dao.SupplierDAO;
+import com.springproject.model.Supplier;
+import com.springproject.service.SupplierService;
 @ComponentScan("com.springproject")
 public class TestSupplierDAO {
 	@Autowired
@@ -54,4 +54,3 @@ public class TestSupplierDAO {
 	}
 		
 }
-*/
