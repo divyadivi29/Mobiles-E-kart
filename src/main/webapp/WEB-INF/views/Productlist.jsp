@@ -1,56 +1,95 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-    <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-        <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags"%>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+
 <head> 
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Product List</title>
-<link rel="stylesheet" href="<c:url value="resources/assets/bootstrap/css/bootstrap.min.css"/>">
-    <link rel="stylesheet" href="<c:url value="resoursces/assets/css/styles.css"/>">
+
+	<link rel="stylesheet" href="<c:url value="resources/assets/bootstrap/css/bootstrap.min.css"/>">
+    <link rel="stylesheet" href="<c:url value="resources/assets/css/styles.css"/>">
     <link rel="stylesheet" href="<c:url value="resources/assets/css/category.css"/>">
- 
+
 
 </head>
+
 <body>
 
+ 
+   
 
 
+<br>
+<br>
+<br>
+<br>
 
-<div class="container">
+<div class="container-fluid">
 
-<c:forEach items="${Listpro}" var="product">
 
-            
-                <div class="col-md-4 col-md-offset-0">
-                    <div>
-                        <div class="row">
-                            <div class="col-md-12"><img width="100px" height="100px" atl="${product.productid}"
-			src="<c:url value="/resources/images/${product.productid}.jpg"></c:url>">></div>
-                            <div class="col-md-12">
-                                <h4>${product.productName}</h4>
-                                <p>
-                                <ul>
-                                <li> ${product.price}</li>
-                                <li> ${product.productDescription}</li>
-                               
-                                <li>
-                                <form:form action="addToCart/${product.productid}" method="POST">
+          
+        <div class="row">
+<c:forEach items="${Listpro}" var="product">     
+            <div class="col-md-3 col-sm-4">
+                <div class="thumbnail">
+                <img src="/Moblies/myImage/imageDisplay?id=${product.productid}" alt="" width="298" height="398" /><%-- <img src="<c:url value="/resources/assets/img/rv_1-gito-1.jpg"/>">
+                    --%> <div class="caption">
+                        <h3>${product.productName}</h3>
+                        <ul>
+                         <p>${product.productDescription}</p>
+                        <li>Price: Rs.<Strong>${product.price}</Strong></li>
+                       
+     
+                   <form:form action="addToCart/${product.productid}" method="POST">
                                 <input type="submit" value="Add to Cart" class="btn btn-primary">
                                 </form:form>
-                                </li>
-                                </ul></p>
+                                
+                                </ul>
                             </div>
                         </div>
                     </div>
-                
+         
+           </c:forEach>       
                 </div>
                 
-           </c:forEach>
+         
         </div>
-       
+        
+        <%-- <div class="well">     
+		<table class ="table table-hover ">
+		<thead>
+		<tr>
+	
+	<th>Product name</th>
+	<th>Product desc</th>
+	<th>product price</th>
+	<th>image</th>
+</tr>
+</thead>	
+<tbody>	
+<c:forEach items="${prodList}" var="product">
+		<tr>
+			<td>${product.product_name}</td>
+			<td>${product.description}</td>
+			<td>${product.price}</td>
+			<td><div class="thumbnail">
+			<img height="200px" width="200px" atl="${product.id}"
+			src="<c:url value="/resources/images/${product.id}.jpg"></c:url>">
+			</div></td>
+			
+			
+		</tr>
+	</c:forEach>
+	</tbody>	
+	
+</table>
+</div>
+ --%>
+
 
 <script src="<c:url value="resources/assets/js/jquery.min.js"/>"></script>
     <script src="<c:url value="resources/assets/bootstrap/js/bootstrap.min.js"/>"></script>

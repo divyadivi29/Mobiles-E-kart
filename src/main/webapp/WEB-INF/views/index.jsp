@@ -73,6 +73,32 @@
             <li data-target="#carousel-1" data-slide-to="2"></li>
         </ol>
     </div>
+    
+        <div class="container">
+		<c:forEach items="${HomeList}" var="product">
+		<div class="col-md-4">
+				<div class="thumbnail">
+				<img class="img-responsive" style="padding-top: 5px" src="/Moblies/myImage/imageDisplay?id= ${product.productid}" /></div>
+				 <div class="caption">
+                  <h4 class="pull-right">${product.price}</h4>
+                  <h4><a href=  "#">${product.productName}</a></h4>
+                  <p>${product.productDescription}.</p>
+                								<form action="addToCart/${product.productid}">
+										<input type="submit" value="Add to Cart" class="btn btn-primary" >
+
+									</form>
+						
+					</div>
+				
+				</div>
+				</c:forEach>
+			</div>
+		
+</div>
+
+    </div>
+   
+    
     <div class="well">
         <footer>
             <div class="row">

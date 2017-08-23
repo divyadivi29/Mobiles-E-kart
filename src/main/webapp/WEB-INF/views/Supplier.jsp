@@ -56,10 +56,10 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <button class="btn btn-primary" name="action" type="submit">Add </button>
-                    <button class="btn btn-primary" name="action" type="button">Edit </button>
-                    <button class="btn btn-primary" name="action" type="submit">Delete </button>
-                    <button class="btn btn-primary" name="action" type="submit">Search </button>
+                    <button class="btn btn-primary" name="action" type="submit" value="Add">Add </button>
+                    <button class="btn btn-primary" name="action" type="button" value="Edit">Edit </button>
+                    <button class="btn btn-primary" name="action" type="submit" value="Delete">Delete </button>
+                    <button class="btn btn-primary" name="action" type="submit" value="Search">Search </button>
                 </div>
             </div>
         </div>

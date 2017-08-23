@@ -34,7 +34,7 @@
             </div>
         </div>
     </nav>
-    <form:form method="POST" action="product.do" encode="multipart/form-data" modelAttribute="product">
+    <form:form method="POST" action="product.do" enctype="multipart/form-data" modelAttribute="product">
     <div class="container">
         <div class="well"><span> </span>
             <div class="row">
@@ -82,7 +82,7 @@
                     <form:label path="image">image </form:label>
                 </div>
                 <div class="col-md-6">
-                    <form:input path="image" type="file"/>
+                     <input type="file" name="file" />
                 </div>
             </div>
             <div class="row">
@@ -119,10 +119,10 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <button class="btn btn-primary" name="action" type="submit">ADD </button>
-                    <button class="btn btn-primary" name="action" type="submit">Edit </button>
-                    <button class="btn btn-primary" name="action" type="submit">Delete </button>
-                    <button class="btn btn-primary" name="action" type="submit">Search </button>
+                    <button class="btn btn-primary" name="action" type="submit" value="Add">ADD </button>
+                    <button class="btn btn-primary" name="action" type="submit" value="Edit">Edit </button>
+                    <button class="btn btn-primary" name="action" type="submit" value="Delete">Delete </button>
+                    <button class="btn btn-primary" name="action" type="submit" value="Search">Search </button>
                 </div>
             </div>
         </div>
@@ -153,10 +153,8 @@
 			<td>${product.price}</td>
 			<td>${product.stock}</td>
 			<td><div class="thumbnail">
-			<img height="200px" width="200px" atl="${product.productid}"
-			src="<c:url value="/resources/images/${product.productid}.jpg"></c:url>">
-			</div></td>
-			
+				<img  class="img-responsive" style="padding-top: 5px" src="/Moblies/myImage/imageDisplay?id=${product.productid}" />
+				 </div></td>
 			
 		</tr>
 	</c:forEach>
